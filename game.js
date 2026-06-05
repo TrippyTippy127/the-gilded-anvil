@@ -37,15 +37,15 @@ function showScreen(screenName) {
 
 
 // UI INTERACTIONS
-document.getElementById("btn-buy").addEventListener("click", function() {
+document.getElementById("buy-btn").addEventListener("click", function() {
     showScreen("buy");
 })
 
-document.getElementById("btn-craft").addEventListener("click", function() {
+document.getElementById("craft-btn").addEventListener("click", function() {
     showScreen("craft");
 })
 
-document.getElementById("btn-shop").addEventListener("click", function() {
+document.getElementById("shop-btn").addEventListener("click", function() {
     showScreen("shop");
 })
 
