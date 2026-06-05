@@ -1,5 +1,7 @@
+// GAME DATA & LOGIC
+
 // Materials available in the shop
-const materials = [
+const MATERIALS = [
   {name: "Wood", price: 5},
   {name: "Cloth", price: 8},
   {name: "Metal", price: 12},
@@ -7,15 +9,21 @@ const materials = [
   {name: "Gem", price: 25}
 ];
 
-const recipes = [
+
+//Recipes for crafting items
+const RECIPES = [
     {name: "Wooden Shield", ingredients: {"Wood": 3}, value: 20, repRequired: 0},
     {name: "Linen Shirt", ingredients: {"Cloth": 5}, value: 30, repRequired: 0}
 ];
 
-playerState = {
+// Player state
+const playerState = {
     gold: 100,
     reputation: 0,
     inventory: {},
 }
+
+
+
 
 console.log("The Gilded Anvil Loaded!");
