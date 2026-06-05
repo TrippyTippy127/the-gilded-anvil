@@ -24,6 +24,31 @@ const playerState = {
 }
 
 
+// UI MANAGEMENT
+function showScreen(screenName) {
+    // Hide all screens
+    document.getElementById("screen-buy").style.display = "none";
+    document.getElementById("screen-craft").style.display = "none";
+    document.getElementById("screen-shop").style.display = "none";
+
+    // Show the selected screen
+    document.getElementById("screen-" + screenName).style.display = "block";
+}
 
 
-console.log("The Gilded Anvil Loaded!");
+// UI INTERACTIONS
+document.getElementById("btn-buy").addEventListener("click", function() {
+    showScreen("buy");
+})
+
+document.getElementById("btn-craft").addEventListener("click", function() {
+    showScreen("craft");
+})
+
+document.getElementById("btn-shop").addEventListener("click", function() {
+    showScreen("shop");
+})
+
+
+showScreen("buy"); // Start on the buy screen
+console.log("The Gilded Anvil Loaded!"); // Debug log to confirm the game has loaded
